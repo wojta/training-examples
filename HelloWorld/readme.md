@@ -8,7 +8,8 @@ Příklad HelloWold
 
 Postup
 ------
-
+1) Založte v IDEA nový projekt (File > New project... > Empty project)
+2) Založe v IDEA nový modul (_File > New module... > Java > Android > Application module_)
 
 HelloWorld example
 ==================
