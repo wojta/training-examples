@@ -37,3 +37,5 @@ HelloWorld example
 ==================
 
 * You will learn to create Android project with one activity (the screen interacting with user).
+
+<img src="http://raw.githubusercontent.com/wojta/training-examples/master/_images/hello_toast.png" />
