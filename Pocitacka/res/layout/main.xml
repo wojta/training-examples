@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/svScroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="16dp">
+
+    <LinearLayout
+            android:id="@+id/llNumberA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/numberA"/>
+
+        <EditText
+                android:id="@+id/edtNumA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:inputType="number|numberDecimal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/llNumberB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llNumberA">
+
+        <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/numberB"/>
+
+        <EditText
+                android:id="@+id/edtNumB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:inputType="number|numberDecimal"/>
+
+    </LinearLayout>
+
+    <Spinner
+            android:id="@+id/spinOp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/llNumberB"
+            android:entries="@array/ops"/>
+
+    <Button
+            android:id="@+id/butCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVysledek"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:text="@string/calc"/>
+
+    <TextView
+            android:id="@+id/txtVysledek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinOp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="19dp"
+            android:saveEnabled="true"
+            android:textSize="20sp"/>
+
+</RelativeLayout>
